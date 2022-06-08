@@ -49,3 +49,10 @@ document.write("<br>")
 // My example of an expression
 var exp = "My string expression";
 document.write(exp);
+document.write("<br>");
+
+
+// Here is my Event Challenge. I just the onkeydown event
+function myFunction() {
+    alert("You pressed a key inside the field");
+}
