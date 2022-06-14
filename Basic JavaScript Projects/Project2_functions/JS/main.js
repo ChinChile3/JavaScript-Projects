@@ -11,3 +11,18 @@ function ConFunction() {
     sentence += "concatenated string.";
     document.getElementById("concatenate").innerHTML = sentence;
 }
+
+
+// This functions adds two numbers
+function mathFunction() {
+    var x = 25 + 47;
+    document.getElementById("add").innerHTML = x;
+}
+
+
+// This function displays new text when the <p> with the id "paragraph"
+// is clicked on
+function stringFunction() {
+    var words = "Here is my function";
+    document.getElementById("paragraph").innerHTML = words;
+}
