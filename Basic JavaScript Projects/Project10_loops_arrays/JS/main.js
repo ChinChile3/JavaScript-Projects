@@ -59,18 +59,19 @@ function constant_function() {
 // is only accessible within its own block.
 // Deleting the brackets would display the result of 45 + 47, which equals
 // 92
+// I commented out the getElementById on line 67 to let the rest of my JS code work
 var num1 = 45;
 {
     let num2 = 47;
 }
-document.getElementById("let_keyword").innerHTML = num1 + num2;
-
-
+//document.getElementById("let_keyword").innerHTML = num1 + num2;
 // In index.html starting on line 43 is my example of using the return statement
 
 
-// MY return STATEMENT THAT WON'T DISPLAY IN THE BROWSER
-// Example of an object with properites and a method
+
+
+
+// Example of an object with properites, a method, and a return statement
 let movie = {
     title: "Wayne's World",
     genre: "comedy",
@@ -82,14 +83,12 @@ let movie = {
 };
 document.getElementById("movie_object").innerHTML = movie.summary();
 
-let car = {
-    make: "Dodge ",
-    model: "Viper ",
-    year: "2021 ",
-    color: "red ",
-    description: function() {
-        return "The car is a " + this.year + this.color + this.make + this.model;
-    }
-};
 
-document.getElementById("Car_Object").innerHTML = car.description();
+// Example of break and continue statements
+var T = ""
+for (let R = 25; R > 10; R--) {
+    if (R == 20) { continue; }
+    if (R == 15) { break; }
+    T += "Here is the number " + R + "<br>";
+}
+document.getElementById("b_c_statement").innerHTML = T;
