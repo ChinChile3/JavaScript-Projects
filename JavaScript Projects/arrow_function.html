@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <p id="para"></p>
+
+        <script>
+            var words = textFunction();
+            function textFunction () {
+                return "Here is my test string.";
+            }
+            document.getElementById("para").innerHTML = words;
+        </script>
+
+        <p id="paragraph"></p>
+
+        <script>
+            var letters;
+            letters = () => {
+                return "Here is my test string.";
+            }
+            document.getElementById("paragraph").innerHTML = letters();
+        </script>
+        
+
+
+
+
+    </body>
+</html>

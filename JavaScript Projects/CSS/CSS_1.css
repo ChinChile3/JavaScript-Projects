@@ -1,0 +1,34 @@
+/* Styling of input boxes  */ 
+input[type=text], select {
+    width: 50%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Styling of submit input */
+input[type=submit] {
+    width: 10%;
+    background-color: lightgray;
+    color: black;
+    padding: 8px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit input */
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+/* Adds background color and styling for who form section */
+div {
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    padding: 16px;
+}
