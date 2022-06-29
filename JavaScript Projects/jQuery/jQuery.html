@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <script>
+        //Function that appends html document upon it loading
+         $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            //Changes color of element with id of 2
+            $("#2").css({"color":"red"});
+            //Function that hides <h1> element upon clicking element with id of 3
+            $("#3").click(function() {
+                $("h1").hide();
+            });
+            //This adds specific sentences to the console by clicking the <p> element with the id of 1
+            $("#1").one("click", firstClick );
+            function firstClick() {
+                console.log("You clicked this just now.");
+                //Setup new handler for subsequent clicks.
+                $(this).click(function() {
+                    console.log("You have clicked this before.");
+                });
+            };
+            //Clicking on paragraph 2 will show the hidden <h1> element slowly
+            $("#2").click(function() {
+                $("h1").show("slow");
+            })
+        });
+     </script>
+</html>
