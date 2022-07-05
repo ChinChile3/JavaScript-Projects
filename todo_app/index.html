@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/todo.css">
+        <title>Todo App</title>
+    </head>
+    <body>
+        <input id="task"><button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+
+        <script src="js/todo.js"></script>
+
+        <p id="sportTeam"></p>
+        <p id="TeamParse"></p>
+        <script>
+            var teamObj = {"name":"Jazz", "sport":"Basketball", "city_state":"Utah"};
+            var myJSON = JSON.stringify(teamObj);
+            document.getElementById("sportTeam").innerHTML = myJSON;
+
+            var parseTeam = JSON.parse(myJSON);
+            document.getElementById("TeamParse").innerHTML = parseTeam.name + " is a NBA team from " + parseTeam.city_state;
+
+        </script>
+
+        <p id="nflTeam"></p>
+        <script>
+            localStorage.setItem("Name", "Washington Commanders");
+            document.getElementById("nflTeam").innerHTML = localStorage.getItem("Name");
+        </script>
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <p>Anthony Velarde: 7/4/2022</p>
+            <p>Email Address: anta7x1994@yahoo.com</p>
+        </footer>
+    
+    </body>
+</html>

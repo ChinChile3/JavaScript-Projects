@@ -55,8 +55,18 @@
     margin: 25px auto;
 }
 
+html {
+    background-color: rgb(135, 5, 135);
+}
+
 body {
-    background-color: rgba(115, 0, 128, 0.78);
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h1 {

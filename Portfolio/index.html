@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Anthony Velarde</title>
+        <link rel="shortcut icon" type="img/png" href="images/268998.png">
+        <link rel="stylesheet" type="text/css" href="./css/portfolio_css.css">
+    </head>
+
+    <!--BODY-->
+    <body class="Background">
+
+        <!--NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <!-- NEW SECTION -->
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <!-- Onclick and dblClick functions added to open and close contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact" href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Code_Video">
+                <source src="images/videos/code_video.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white-text">Anthony Velarde's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is Anthony Velarde. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!-- NEW SLIDESHOW SECTION -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/html.png" alt="HTML5">
+                        <div class="text">I'm currently a student at The Tech Academy studying programming languages, such as HTML,</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/css.png" alt="CSS">
+                        <div class="text">CSS,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/js.jpg" alt="JavaScript">
+                        <div class="text">JavaScript,</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/c_sharp.png" alt="C#">
+                        <div class="text">the popular language C#,</div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/c++.png" alt="C++">
+                        <div class="text">and C++. </div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/programming-battlestation-pc-coding.jpg" alt="Programming">
+                        <div class="text">Contact me today!</div>
+                    </div>
+                    <!-- Previous and Next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--ABOUT SECTION-->
+        <div class="Row" id="About">
+             <!--Left column-->
+             <div class="Column_2">
+                <img src="images/pexels-eduardo-rosas-968631.jpg" alt="Code">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! I enjoy playing video games with friends, and spending time with my family and my girlfriend. 
+                    <br>
+                    <br>I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Game Development Boot Camp, and currently training in the following web and programming languages: HTML, CSS, JavaScript, C#, and C++.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GITHUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/ChinChile3" target="_blank">Anthony Velarde's GitHub</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/ChinChile3" target="_blank"><img src="images/github-g14155b5d2_1280.png" alt="GitHub_Logo"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <!-- Here we are using a free online service to send our contact form to an email of our choosing. Must but pushed to online website -->
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <h1>Contact</h1>
+                    <label for="name"><br>Name</br></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone"><br>Phone</br></label>
+                        <input type="text" name="phone" placeholder="Please enter your phone number here">
+                    <label for="email"><br>Message</br></label>
+                        <input type="text" id="Message" name="email" placeholder="Please enter your email address here" required>
+                    <label for="message"><br>Message</br></label>
+                        <input type="text" name="message" placeholder="Please enter your message here">
+
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+         <!--Footer section-->
+         <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+        <script src="js/portfolio_js.js"></script>
+    </body>
+</html>
